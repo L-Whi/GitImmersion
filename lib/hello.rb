@@ -1,8 +1,7 @@
-puts "What's your name" my_name = gets.strip
-#Default is "World" Author: Jim Weirich (jim@somewhere.com)
-puts "Hello, #{my_name}!" 
+require 'greeter'
 
-name = ARGV.first || "World"
+puts "What's your name"
+my_name - gets.strip
 
-
-puts "Hello, #{name}!"
+greeter = Greeter.new(my_name)
+puts greeter.greet
